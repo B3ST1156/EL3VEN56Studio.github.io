@@ -55,7 +55,7 @@ h1 {
 }
 
 /*This is where I want to have a hover state link straight to portfolio page*/
-.Box2 {
+/* .Box2 {
     
     position: fixed;
     bottom: 200px;
@@ -63,7 +63,7 @@ h1 {
     width: 500px;
     height: 250px;
     background-color: white
-}
+} */
 
 h1 {
     position: fixed;
@@ -71,9 +71,9 @@ h1 {
     top: 25px;
     }
 
-.boxes {
+/*.boxes {
 color: white
-}
+} */
 
 
 
@@ -81,12 +81,7 @@ color: white
 /*Here are the positions for my menu links...*/
 /*==========================================================================================*/
 
-#boxes {
-    background: orange;
-        
     
-}
-
 #portfolio {
     position: fixed;
     top: 300px;
