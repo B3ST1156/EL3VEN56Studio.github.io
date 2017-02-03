@@ -1,0 +1,116 @@
+
+/*This is the basic foundation code for my portfolio website.....*/
+
+/*This selects the entire html page and fits in the background image*/
+/*==========================================================================================*/
+html { 
+  background: url(img/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*==========================================================================================*/
+
+/*Hover States*/
+/*==========================================================================================*/
+
+/*This is the link look state*/
+a:link {
+    text-decoration: none;
+}
+
+/*This is the already clicked on state*/
+a:visited {
+    color: dimgray;
+    opacity: 0.5;
+}
+
+/*This is the presently selected state*/
+a:focus {
+    
+} 
+
+/*This controls the mouse coursor hover state*/
+a:hover {
+    color: white;
+    transition: color 1s;
+}
+
+/*This controls the click and hold look*/
+a:active {
+    
+}
+
+    
+/*==========================================================================================*/
+
+
+/*CSS elements*/
+/*==========================================================================================*/
+
+h1 {
+    color: white;
+}
+
+/*This is where I want to have a hover state link straight to portfolio page*/
+.Box2 {
+    
+    position: fixed;
+    bottom: 200px;
+    right: 500px;
+    width: 500px;
+    height: 250px;
+    background-color: white
+}
+
+h1 {
+    position: fixed;
+    right: 800px;
+    top: 25px;
+    }
+
+.boxes {
+color: white
+}
+
+
+
+/*==========================================================================================*/    
+/*Here are the positions for my menu links...*/
+/*==========================================================================================*/
+
+#boxes {
+    background: orange;
+        
+    
+}
+
+#portfolio {
+    position: fixed;
+    top: 300px;
+    left: 75px;
+    font-size: 25pt;
+}
+
+#resume {
+    position: fixed;
+    top: 350px;
+    left: 75px;
+    font-size: 25pt;
+}
+
+#bio {
+    position: fixed;
+    top: 400px;
+    left: 75px;
+    font-size: 25pt;
+}
+
+#contact {
+    position: fixed;
+    top: 450px;
+    left: 75px;
+    font-size: 25pt;
+}
