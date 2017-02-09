@@ -4,7 +4,7 @@
 /*This selects the entire html page and fits in the background image*/
 /*==========================================================================================*/
 html { 
-  background: url(../img/background.jpg) no-repeat center center fixed; 
+  background: url(../img/1156_Option_1.JPG) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -106,6 +106,7 @@ color: white
 /*This is a test of the animations*/
 /*==========================================================================================*/
 
+/*
 @keyframes example {
     0% {background-color: red;}
     25% {background-color: yellow;}
@@ -113,9 +114,11 @@ color: white
     100% {background-color: green;}
     
 }
+*/
 
 /*So in order to attatch an animation to an element you must add the animation-name line to the css code.*/
 
+/*
 .Box2 {
     
     position: fixed;
@@ -128,7 +131,7 @@ color: white
     animation-duration: 60s;
 }
 
-
+*/
 
 
 
