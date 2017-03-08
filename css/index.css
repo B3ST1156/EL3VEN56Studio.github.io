@@ -1,9 +1,18 @@
+
+
+
 /*TypeFaces*/
 /*==========================================================================================*/
 
 @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
 
 /*==========================================================================================*/
+
+/*Box Sizing*/
+*{
+  box-sizing: border-box;
+}
+
 /*This is the basic foundation code for my portfolio website.....*/
 
 /*This selects the entire html page and fits in the background image*/
