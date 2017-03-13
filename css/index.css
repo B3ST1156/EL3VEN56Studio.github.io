@@ -15,6 +15,9 @@
 
 /*This is the basic foundation code for my portfolio website.....*/
 
+
+
+
 /*This selects the entire html page and fits in the background image*/
 /*==========================================================================================*/
 html { 
@@ -26,6 +29,9 @@ html {
 }
 
 /*==========================================================================================*/
+
+
+
 
 /*Hover States*/
 /*==========================================================================================*/
@@ -60,6 +66,8 @@ a:active {
 
     
 /*==========================================================================================*/
+
+
 
 
 /*CSS elements*/
@@ -100,6 +108,8 @@ color: white
 .menu li {
     
     display: block;
+    width: 300px;
+    height: 50px;    
     background-color: purple;
     list-style-type: none;
     margin: 50px;
@@ -141,7 +151,7 @@ color: white
 /*==========================================================================================*/
 
     
-#portfolio-home {
+/*#portfolio-home {
     background: red;
     font-family: 'Julius Sans One', sans-serif, "inherit";
     position: fixed;
@@ -176,7 +186,7 @@ color: white
     left: 75px;
     font-size: 25pt;
     
-}
+}*/
 
 /*This is a test of the animations*/
 /*==========================================================================================*/
