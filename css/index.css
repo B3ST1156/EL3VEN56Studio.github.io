@@ -13,10 +13,6 @@
   box-sizing: border-box;
 }
 
-/*This is the basic foundation code for my portfolio website.....*/
-
-
-
 
 /*This selects the entire html page and fits in the background image*/
 /*==========================================================================================*/
@@ -28,46 +24,6 @@ html {
   background-size: cover;
 }
 
-/*==========================================================================================*/
-
-
-
-
-/*Hover States*/
-/*==========================================================================================*/
-
-/*This is the link look state*/
-a:link {
-    color: gray;
-    text-decoration: none;
-}
-
-/*This is the already clicked on state*/
-a:visited {
-    color: dimgray;
-    opacity: 0.5;
-}
-
-/*This is the presently selected state*/
-a:focus {
-    
-} 
-
-/*This controls the mouse coursor hover state*/
-a:hover {
-    color: white;
-    transition: color 1s;
-}
-
-/*This controls the click and hold look*/
-a:active {
-    
-}
-
-    
-/*==========================================================================================*/
-
-
 
 
 /*CSS elements*/
@@ -77,32 +33,21 @@ h1 {
     color: white;
 }
 
-/*This is where I want to have a hover state link straight to portfolio page*/
-
-
-h1 {
-    position: fixed;
-    right: 800px;
-    top: 25px;
-    }
-
-/*.boxes {
-color: white
-} */
-
 /*==========================================================================================*/
 
 .menu {
-    background-color: aqua;
-    width: 300px;
-    height: 800px;
     display: flex;
-
-    
-    
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    
+    background-color: aqua;
+    width: 300px;
+    height: 1000px;
+   
+
+    
+
 }
 
 .menu li {
@@ -118,323 +63,116 @@ color: white
 }   
     
     
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*==========================================================================================*/    
-/*Here are the positions for my menu links...*/
-/*==========================================================================================*/
 
-    
-/*#portfolio-home {
-    background: red;
-    font-family: 'Julius Sans One', sans-serif, "inherit";
-    position: fixed;
-    top: 300px;
-    left: 75px;
-    font-size: 25pt;
+/*Animated 3D Flipping Menu*/
+/*A PEN BY Jordano*/
+
+/* basic menu styles */
+.block-menu {
+  position: absolute;
+  bottom: 250px;
+  right: 100px;
+  display: block;
+  background: transparent;
 }
 
-#resume-home {
-    background: yellow;
-    font-family: 'Julius Sans One', sans-serif, "inherit";
-    position: fixed;
-    top: 350px;
-    left: 75px;
-    font-size: 25pt;
+.block-menu li {
+  display: inline-block;
 }
 
-#bio-home {
-    background: green;
-    font-family: 'Julius Sans One', sans-serif, "inherit";
-    position: fixed;
-    top: 400px;
-    left: 75px;
-    font-size: 25pt;
+.block-menu li a {
+  color: transparent;
+  display: block;
+  text-decoration: none;
+  font-family: 'Passion One', Arial, sans-serif;
+  font-smoothing: antialiased;
+  text-transform: uppercase;
+  overflow: visible;
+  line-height: 20px;
+  font-size: 24px;
+  padding: 15px 10px;
 }
 
-#contact-home {
-    background: blue;
-    font-family: 'Julius Sans One', sans-serif, "inherit";
-    position: fixed;
-    top: 450px;
-    left: 75px;
-    font-size: 25pt;
-    
-}*/
+/* animation domination */
+.three-d {
+  perspective: 200px;
+  transition: all .07s linear;
+  position: relative;
+  cursor: pointer;
+}
+  /* complete the animation! */
+  .three-d:hover .three-d-box, 
+  .three-d:focus .three-d-box {
+    transform: translateZ(-25px) rotateX(90deg);
+  }
 
-/*This is a test of the animations*/
-/*==========================================================================================*/
-
-/*
-
- #footer {
-    position: fixed;
-    height: 250px;
-    widows: 1000px;
-    background-color: gray;
-    bottom: 0px;
-    
+.three-d-box {
+  transition: all .3s ease-out;
+  transform: translatez(-25px);
+  transform-style: preserve-3d;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  
 }
 
+/* 
+  put the "front" and "back" elements into place with CSS transforms, 
+  specifically translation and translatez
 */
-
-
-
-
-
-
-
-
-
-/*==========================================================================================*/
-/*
-@keyframes example {
-    0% {background-color: red;}
-    25% {background-color: yellow;}
-    50% {background-color: blue;}
-    100% {background-color: green;}
-    
-}
-*/
-
-/*So in order to attatch an animation to an element you must add the animation-name line to the css code.*/
-
-/*
-.Box2 {
-    
-    position: fixed;
-    bottom: 200px;
-    right: 500px;
-    width: 500px;
-    height: 250px;
-    background-color: white;
-    animation-name: example;
-    animation-duration: 60s;
+.front {
+  transform: rotatex(0deg) translatez(25px);
 }
 
-*/
+.back {
+  transform: rotatex(-90deg) translatez(25px);
+  color: #ffe7c4;
+  -webkit-animation: Fadein 1s;
+}
 
+.front, .back {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  padding: 15px 10px;
+  color: white;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+@keyframes Fadein {
+    
+    0% {opacity: 0 } 
+    
+    100% {opacity: 1}
+}
+
+/*==========================================================================================*
 
 
 /*==========================================================================================*/
 
-/*Contact Page*/
 
 /*==========================================================================================*/
 
-#main {
-    
-    position: fixed;
-    font-family: 'Julius Sans One', sans-serif, "inherit";
-    left: 50px;
-    top: 15px;
-    font-size: 4em;
-    
-}
-
-p {
-    
-    position: fixed;
-    font-family: ;
-    left: 50px;
-    top: 150px;
-    padding: 0px;
-    background-color: dimgray;
-    
-    @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
-
-* {
-	margin:0;
-	padding:0;
-	box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-webkit-font-smoothing:antialiased;
-	-moz-font-smoothing:antialiased;
-	-o-font-smoothing:antialiased;
-	font-smoothing:antialiased;
-	text-rendering:optimizeLegibility;
-}
-
-body {
-	font-family:"Open Sans", Helvetica, Arial, sans-serif;
-	font-weight:300;
-	font-size: 12px;
-	line-height:30px;
-	color:#777;
-	background:#0CF;
-}
-
-.container {
-	max-width:400px;
-	width:100%;
-	margin:0 auto;
-	position:relative;
-}
-
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
-
-#contact {
-	background:#F9F9F9;
-	padding:25px;
-	margin:50px 0;
-}
-
-#contact h3 {
-	color: #F96;
-	display: block;
-	font-size: 30px;
-	font-weight: 400;
-}
-
-#contact h4 {
-	margin:5px 0 15px;
-	display:block;
-	font-size:13px;
-}
-
-fieldset {
-	border: medium none !important;
-	margin: 0 0 10px;
-	min-width: 100%;
-	padding: 0;
-	width: 100%;
-}
-
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
-	width:100%;
-	border:1px solid #CCC;
-	background:#FFF;
-	margin:0 0 5px;
-	padding:10px;
-}
-
-#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
-	-webkit-transition:border-color 0.3s ease-in-out;
-	-moz-transition:border-color 0.3s ease-in-out;
-	transition:border-color 0.3s ease-in-out;
-	border:1px solid #AAA;
-}
-
-#contact textarea {
-	height:100px;
-	max-width:100%;
-  resize:none;
-}
-
-#contact button[type="submit"] {
-	cursor:pointer;
-	width:100%;
-	border:none;
-	background:#0CF;
-	color:#FFF;
-	margin:0 0 5px;
-	padding:10px;
-	font-size:15px;
-}
-
-#contact button[type="submit"]:hover {
-	background:#09C;
-	-webkit-transition:background 0.3s ease-in-out;
-	-moz-transition:background 0.3s ease-in-out;
-	transition:background-color 0.3s ease-in-out;
-}
-
-#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
-
-#contact input:focus, #contact textarea:focus {
-	outline:0;
-	border:1px solid #999;
-}
-::-webkit-input-placeholder {
- color:#888;
-}
-:-moz-placeholder {
- color:#888;
-}
-::-moz-placeholder {
- color:#888;
-}
-:-ms-input-placeholder {
- color:#888;
-}
-
-    
-}
 
 /*==========================================================================================*/
 
-/*Resume Page*/
 
 /*==========================================================================================*/
 
-#resume {
-    
-    position: fixed;
-    font-family: 'Julius Sans One', sans-serif, "inherit";
-    left: 50px;
-    top: 15px;
-    font-size: 4em;
-    
-}
 
 /*==========================================================================================*/
 
-/*Bio Page*/
-
-/*==========================================================================================*/
-
-#bio {
-    
-    position: fixed;
-    font-family: 'Julius Sans One', sans-serif, "inherit";
-    left: 50px;
-    top: 15px;
-    font-size: 4em;
-    
-}
-
-/*==========================================================================================*/
-
-/*Portfolio Page*/
-
-/*==========================================================================================*/
-
-#main {
-    
-    position: fixed;
-    font-family: 'Julius Sans One', sans-serif, "inherit";
-    left: 50px;
-    top: 15px;
-    font-size: 4em;
-    
-}
 
 /*==========================================================================================*/
 
